@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- * main - Entry point
+ * main - print the alphabets in small letters and in capital letters.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
+
 int main(void)
 {
- char alp[26] = "abcdefghijklmnopqrstuvwxyz";
- int i;
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	for (i = 0; i < 26; i++)
+	for (i = 0; i < 52; i++)
 	{
 	putchar(alp[i]);
 	}
 	putchar('\n');
-
 	return (0);
 }
