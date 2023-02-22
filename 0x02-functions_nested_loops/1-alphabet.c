@@ -1,3 +1,4 @@
+#include <stdio.h> 
 #include "main.h"
 
 /**
@@ -19,7 +20,7 @@ char alphabets[26] = "abcdefghijklmnopqrstuvwxyz";
 int i;
 for (i = 0; i < 26; i++)
 {
-putchar(alphabets[26]);
+putchar(alphabets[i]);
 }
 
 putchar('\n');
