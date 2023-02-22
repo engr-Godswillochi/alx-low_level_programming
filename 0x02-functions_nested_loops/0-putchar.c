@@ -15,6 +15,6 @@ char hi[8] = "_putchar";
    {
      putchar(hi[i]);
    }
- _putchar('\n');
+  putchar('\n');
  return (0);
 }

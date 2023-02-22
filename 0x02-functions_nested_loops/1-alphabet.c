@@ -18,9 +18,9 @@ void print_alphabet(void)
 
   for (i=0; i<26; i++)
     {
-      putchar(alphabets[i]);
+      putchar(alphabets[26]);
     }
 
-  _putchar('\n');
+  putchar('\n');
 
 }
