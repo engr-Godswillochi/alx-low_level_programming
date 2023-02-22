@@ -12,7 +12,11 @@ print_alphabet();
 return (0);
 }
 
-/* print_alphabet- to print alphabets*/
+/**
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 
 void print_alphabet(void)
 {
