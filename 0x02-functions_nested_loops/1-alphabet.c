@@ -13,10 +13,12 @@ int main(void)
 
 void print_alphabet(void)
 {
-  char c;
-  for (c = 'a'; c <= 'z'; c++)
+  char alphabets[26] = "abcdefghijklmnopqrstuvwxyz";
+  int i;
+
+  for (i=0; i<26; i++)
     {
-      _putchar(c);
+      putchar(alphabets[i]);
     }
 
   _putchar('\n');
