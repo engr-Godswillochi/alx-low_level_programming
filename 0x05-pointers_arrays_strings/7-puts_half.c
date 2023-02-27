@@ -25,7 +25,7 @@ n = 1 + (j - 1) / 2;
 }
 for (;n < j; n++)
 {
-_putchar(str[i]);
+_putchar(str[n]);
 }
 _putchar('\n');
 }
