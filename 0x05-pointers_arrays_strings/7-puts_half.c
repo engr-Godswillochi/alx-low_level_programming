@@ -23,7 +23,7 @@ else
 {
 n = 1 + (j - 1) / 2;
 }
- for (i = j ; i > n; i--)
+for (;n < j; n++)
 {
 _putchar(str[i]);
 }
