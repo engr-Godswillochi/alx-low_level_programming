@@ -30,7 +30,7 @@ int main() {
     password[PASSWORD_LENGTH] = '\0'; /* Add null terminator to the end of the string */
 
     /* Print the password*/
-    printf("Password: %s\", password);
+    printf("Password: %s", password);
 
     return (0);
 }
