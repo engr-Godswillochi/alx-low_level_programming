@@ -42,7 +42,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 		if (d >= a)
 		{
-			ptr[d] = s2[d];
+			ptr[d] = s2[b];
 			b++;
 		}
 		d++;
