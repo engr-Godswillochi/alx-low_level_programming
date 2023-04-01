@@ -14,6 +14,6 @@ _Godswill:
 	MOV rdi, 0
 	SYSCALL
 
-section .data
+section .rodata
 	msg: DB "Hello, Holberton", 10
 	msglength: equ $ - msg
