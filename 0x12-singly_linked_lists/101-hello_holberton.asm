@@ -2,16 +2,16 @@ section .text
 global main
 
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, msglen
-	syscall
+	MOV rax, 0x1
+	MOV rdi, 0x1
+	MOV rsi, msg
+	MOV rdx, msglength
+	SYSCALL
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+	MOV rax, 0x3C
+	MOV rdi, 0x0
+	SYSCALL
 
 section .data
-	msg: db "Hello, Holberton", 10
-	msglen: equ $ - msg
+	msg: db "Hello, Holberton", 0xA
+	msglength: equ $ - msg
