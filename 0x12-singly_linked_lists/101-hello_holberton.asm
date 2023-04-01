@@ -1,19 +1,17 @@
-global _Godswill
-
 section .text
+global main
 
+main:
+	mov rax, 1
+	mov rdi, 1
+	mov rsi, msg
+	mov rdx, msglen
+	syscall
 
-_Godswill:
-	MOV rax, 1
-	MOV rdi, 1
-	MOV rsi, msg
-	MOV rdx, msglength
-	SYSCALL
+	mov rax, 60
+	mov rdi, 0
+	syscall
 
-	MOV rax, 60
-	MOV rdi, 0
-	SYSCALL
-
-section .rodata
-	msg: DB "Hello, Holberton", 10
-	msglength: equ $ - msg
+section .data
+	msg: db "Hello, Holberton", 10
+	msglen: equ $ - msg
