@@ -1,6 +1,7 @@
 #include "lists.h"
 
-/** looped_listint_len - Counts the number of unique nodes
+/**
+ * looped_listint_len - Counts the number of unique nodes
  *                      in a looped listint_t linked list.
  * @head: A pointer to the head of the listint_t to check.
  *
