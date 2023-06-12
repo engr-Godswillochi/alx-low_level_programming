@@ -11,21 +11,80 @@
 int main(int argc, char *argv[])
 {
 	int n1;
-	int result, checker;
+	int result = 0, checker, result2;
 
-	if (argc == 1)
+	if (argc == 2)
 	{
 		n1 = atoi(argv[1]);
 		if ( n1 <= 0)
 			printf("0\n");
 		else
 		{
-			result = n1 / 25;
-			checker = (result * 25) - n1;
-			if (checker  == 0)
+			if ((n1 / 25) >= 1)
 			{
-				printf("%d\n", result);
-				return (0);
+				result = n1 / 25;
+				checker = n1 - (result * 25);
+				
+				if (checker == 0)
+				{
+					printf("%d\n", result);
+					return(0);
+				}
+			
+				n1 = checker;
+			}
+
+			
+			if ((n1 / 10) >= 1)
+			{
+				result2 = n1 / 10;
+				checker =  n1 - (result2 * 10);
+				result += result2;
+				if (checker == 0)
+				{
+					printf("%d\n", result);
+					return (0);
+				}
+				n1 = checker;
+			}
+
+			if ((n1 / 5) >= 1)
+			{
+				result2 = n1 / 5;
+				checker =  n1 - (result2 * 5);
+				result += result2;
+				if (checker == 0)
+				{
+					printf("%d\n", result);
+					return (0);
+				}
+				n1 = checker;
+			}
+
+			if ((n1 / 2) >= 1)
+			{
+				result2 = n1 / 2;
+				checker =  n1 - (result2 * 2);
+				result += result2;
+				if (checker == 0)
+				{
+					printf("%d\n", result);
+					return (0);
+				}
+				n1 = checker;
+			}
+
+			if ((n1 / 1) >= 1)
+			{
+				result2 = n1 / 1;
+				checker =  n1 - (result2 * 1);
+				result += result2;
+				if (checker == 0)
+				{
+					printf("%d\n", result);
+					return (0);
+				}
+				n1 = checker;
 			}
 
 		}
