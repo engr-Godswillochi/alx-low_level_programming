@@ -9,8 +9,12 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
+
 	va_list c;
 	int i = 0, x;
+	
+	if (n == 0)
+		rteurn (0);
 
 	va_start(c, n);
 	for (; i < n; i++)
@@ -20,4 +24,5 @@ int sum_them_all(const unsigned int n, ...)
 	}
 	va_end(c);
 
+	return (total);
 }
